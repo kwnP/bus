@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <meta http-equiv="refresh" content="29">
+    <title>버스도착정보</title>
+</head>
+<body>
+    <div class="realrealmain">
+        <div class="hidden-top"></div>
+        <div class="hidden-bottom"></div>
+        <div class="hidden-left"></div>
+        <div class="hidden-right"></div>
+        <div class="led"></div>
+        <div class="ani">
+            <div class="realmain">
+                <div class="container3">
+                    <div class="image-now"></div>
+                    <!-- <div id="clock">clock</div> -->
+                </div>
+                <div class="container2">
+                    <div class="image-station"></div>
+                </div>
+            </div>
+            <div class="realmain">
+                <div class="jul"></div>
+                <div class="main">
+                    {% for a in range(b) %}
+                    <div class="container">
+                        <div class="name">
+                            {% if name[a] == "7200" or name[a] == "7300" %}
+                                {% if low[a] == "1" %}
+                                <div class="image-dis" style="filter: var(--blue);"></div>
+                                {% endif %}
+                                {% for i in list(name[a]) %}
+                                <div class="image-{{i}}" style="filter: var(--blue);"></div>
+                                {% endfor %}
+                            {% else %}
+                                {% if low[a] == "1" %}
+                                <div class="image-dis" style="filter: var(--green);"></div>
+                                {% endif %}
+                                {% for i in list(name[a]) %}
+                                <div class="image-{{i}}" style="filter: var(--green);"></div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="time">
+                            {% for i in list(time[a]) %}
+                            <div class="image-{{i}}"></div>
+                            {% endfor %}
+                            <div class="image-bun"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% for a in range(c) %}
+                    <div class="container">
+                        <div class="name">
+                        {% if result[a] == "7200" or result[a] == "7300" %}
+                        {% for i in list(result[a]) %}
+                        <div class="image-{{i}}" style="filter: var(--blue);"></div>
+                        {% endfor %}
+                        {% else %}
+                        {% for i in list(result[a]) %}
+                        <div class="image-{{i}}" style="filter: var(--green);"></div>
+                        {% endfor %}
+                        {% endif %}
+                        </div>
+                        <div class="time">
+                            <div class="image-garage"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="arrive">
+            <div class="arrive_text">
+                <div class="image-dochak"></div>
+                {% for i in arrive_list %}{% for b in list(i) %}
+                <div class="image-{{b}}"></div>
+                {% endfor %}{% endfor %}
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="image-1"></div>
+    <div class="image-2"></div>
+    <div class="image-3"></div>
+    <div class="image-4"></div>
+    <div class="image-5"></div>
+    <div class="image-6"></div>
+    <div class="image-7"></div>
+    <div class="image-8"></div>
+    <div class="image-9"></div>
+    <div class="image-0"></div>
+    <div class="image-garage"></div>
+    <div class="image-si"></div>
+    <div class="image-bun"></div>
+    <div class="image-dochak"></div>
+    <div class="image-now"></div>
+    <div class="image-station"></div>
+    <div class="image-dis"></div>
+    <div class="image-c"></div>
+    <script>
+        var Target = document.getElementById("clock");
+        function clock() {
+            var time = new Date();
+
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+
+            Target.innerText = 
+            `${hours < 10 ? `0${hours}` : hours} ${minutes < 10 ? `0${minutes}` : minutes}`;
+        }
+        clock();
+        setInterval(clock, 1000); // 1초마다 실행
+    </script>
+    -->
+</body>
+</html>

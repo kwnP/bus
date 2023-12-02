@@ -1,0 +1,443 @@
+:root {
+    --white: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    --red: invert(20%) sepia(74%) saturate(6047%) hue-rotate(355deg) brightness(98%) contrast(122%);
+    --yellow: invert(76%) sepia(100%) saturate(1117%) hue-rotate(2deg) brightness(106%) contrast(104%);
+    --green: invert(58%) sepia(100%) saturate(1707%) hue-rotate(90deg) brightness(84%) contrast(111%);
+    --blue: invert(8%) sepia(98%) saturate(7084%) hue-rotate(248deg) brightness(103%) contrast(144%);
+}
+
+body {
+    background-color: #111111;
+    font-size: 7px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hidden-top {
+    width: 100vw;
+    height: calc((100vh - 55em)/2);
+    background-color: #111111;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+}
+
+.hidden-bottom {
+    width: 100vw;
+    height: calc((100vh - 55em)/2);
+    background-color: #111111;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+}
+
+.hidden-left {
+    width: calc((100vw - 173em)/2);
+    height: 55em;
+    background-color: #111111;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+}
+
+.hidden-right {
+    width: calc((100vw - 173em)/2);
+    height: 55em;
+    background-color: #111111;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+}
+
+.ani {
+    animation: anime 30s steps(1) infinite;
+    top: 0em;
+    position: relative;
+    height: 39em;
+}
+
+.realrealmain {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.realmain {
+    width: 173em;
+    height: 40em;
+    position: relative;
+}
+
+.jul {
+    background-color: #fff000;
+    width: 1em;
+    height: 79em;
+    position: absolute;
+    left: 86em;
+}
+
+.main {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: grid;
+    grid-template-columns: 84em 84em;
+    grid-column-gap: 4em;
+}
+
+.arrive {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: 1em;
+    border: 1em solid #fff000;
+    width: 170em;
+    background-color: #111111;
+    z-index: 1;
+}
+
+.arrive_text {
+    display: flex;
+    width: 170em;
+    background-color: #111111;
+}
+
+.led {
+    position: absolute;
+    width: 173em;
+    height: 55em;
+    image-rendering: pixelated;
+    background-size: 1em;
+    background-image: url(led.png);
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+    width: 84em;
+}
+
+.container2 {
+    width: 171em;
+    animation: station 30s forwards steps(258) infinite;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.container3 {
+    display: flex;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.name {
+    display: flex;
+    width: 100em;
+}
+
+.time {
+    display: flex;
+}
+
+.image-1 {
+    width: 4em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -1em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-2 {
+    width: 5em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -7em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-3 {
+    width: 5em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -13em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-4 {
+    width: 5em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -19em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.image-5 {
+    width: 5em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -25em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-6 {
+    width: 5em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -31em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-7 {
+    width: 5em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -37em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-8 {
+    width: 5em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -43em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-9 {
+    width: 5em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -49em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-0 {
+    width: 5em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -55em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-garage {
+    width: 33em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -61em;
+    background-size: auto 13em;
+    filter: var(--red);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-si {
+    width: 9em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -97em;
+    background-size: auto 13em;
+    filter: var(--yellow);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-bun {
+    width: 10em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -109em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-dochak {
+    width: 39em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -121em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-now {
+    width: 48em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -162em;
+    background-size: auto 13em;
+    filter: var(--yellow);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-station {
+    width: 257em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -211em;
+    background-size: auto 13em;
+    filter: var(--green);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-dis {
+    width: 8em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -470em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-c {
+    width: 3em;
+    height: 11em;
+    background: url(image.png);
+    image-rendering: pixelated;
+    background-position: -479em;
+    background-size: auto 13em;
+    filter: var(--white);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@keyframes anime {
+    0% {
+        top: 0;
+    }
+    33% {
+        top: -40em;
+    }
+    66% {
+        top: -79em;
+    }
+}
+
+@keyframes station {
+    0% {
+        left: 172em;
+    }
+    30% {
+        left: -86em;
+    }
+    100% {
+        left: -86em;
+    }
+}
+
+@media ( max-width: 1300px ) {
+    body { font-size: 6px; }
+}
+
+@media ( max-width: 1040px ) {
+    body { font-size: 5px; }
+}
+
+@media ( max-width: 870px ) {
+    body { font-size: 4px; }
+}
+
+@media ( max-width: 710px ) {
+    body { font-size: 3px; }
+}
+
+@media ( max-width: 530px ) {
+    body { font-size: 2px; }
+}
+
+@media ( max-width: 360px ) {
+    body { font-size: 1.5px; }
+}
